@@ -1,0 +1,31 @@
+{
+  "name": "absolute-quackery",
+  "version": "1.0.0",
+  "description": "Hockey duck fighting game prototype",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feasdog/absolute-quackery.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feasdog/absolute-quackery/issues"
+  },
+  "homepage": "https://github.com/feasdog/absolute-quackery#readme",
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11",
+    "vite-plugin-singlefile": "^2.0.3"
+  },
+  "type": "module"
+}
