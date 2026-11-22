@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Absolute Quackery</title>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="hud"></div>
+
+  <div id="menu" class="overlay">
+    <div class="panel">
+      <div class="logo">ABSOLUTE<br />QUACKERY</div>
+      <div class="tag">Greybox prototype · Freight Mallard vs Razor Merganser</div>
+      <div class="buttons">
+        <button data-mode="cpu">1 · VS CPU</button>
+        <button data-mode="versus">2 · TWO PLAYERS</button>
+      </div>
+      <table class="controls">
+        <tr><th></th><th>Player 1</th><th>Player 2</th></tr>
+        <tr><td>Move / jump</td><td>A D / W</td><td>← → / ↑</td></tr>
+        <tr><td>Block</td><td colspan="2">Hold away from your opponent</td></tr>
+        <tr><td>Dash (ice slide)</td><td colspan="2">Double-tap a direction</td></tr>
+        <tr><td>Jab · Stick · Check · Shot</td><td>F G H J</td><td>U I O P (or numpad 1–4)</td></tr>
+        <tr><td>Combos</td><td colspan="2">After a hit, chain into a stronger button: Jab → Stick → Check → Shot</td></tr>
+      </table>
+      <div class="hint">Gamepads work too. Esc returns to this menu.</div>
+    </div>
+  </div>
+
+  <div id="over" class="overlay hidden">
+    <div class="panel small">
+      <div class="tag">Press Enter for a rematch · Esc for the menu</div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
