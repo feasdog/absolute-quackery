@@ -46,9 +46,9 @@ Gamepads work too. **Combos:** after a hit lands, chain into a stronger button (
 | `src/game/match.js` | The fight rules, one frame at a time. No graphics, so it's testable and portable. |
 | `src/game/characters.js` | Each duck's stats and move data. Tweak numbers here to rebalance. |
 | `src/game/captions.js` | Hype caption copy. Edit freely. |
-| `src/render.js` | Draws the rink and ducks with Three.js (cel-shaded placeholder shapes). |
+| `src/render/` | Draws everything with Three.js: `duck.js` (the duck models and their animation), `rink.js` (arena, ice, crowd), `effects.js` (sparks, ice spray), `materials.js` (cel shading, ink outlines, painted textures). |
 | `src/hud.js`, `src/style.css` | Health bars, timer, combo counter, captions. |
 | `src/input.js`, `src/ai.js` | Keyboard and gamepad controls, and the CPU opponent. |
 | `test/match.test.js` | Automated checks for the rules. Run with `npm test`. |
 
-The design doc and approved concept art live outside the repo (see `CLAUDE.md`).
+The ducks are built from code (no model files yet), following the approved concept proofs. The design doc and approved concept art live outside the repo (see `CLAUDE.md`).

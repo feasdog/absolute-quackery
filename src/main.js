@@ -4,7 +4,7 @@ import { createMatch, step, FPS } from './game/match.js';
 import { CHARACTERS } from './game/characters.js';
 import { installKeyboard, readInput } from './input.js';
 import { createCpu, cpuInput } from './ai.js';
-import { createRenderer } from './render.js';
+import { createRenderer } from './render/index.js';
 import { createHud } from './hud.js';
 
 const canvas = document.getElementById('game');
